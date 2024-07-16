@@ -50,6 +50,15 @@ class ItemService:
             description="伝説のゲームソフト",
             image="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-75AJkHS_0QwWQ7aJj6ym6EG9w6FDLfdXYXP84j7NVN_rSFqa4NvRBNeeW3LQ56z2nqtgvgj3up0y7NgwuUCBfsCdptKVjzi7d3J2Fw",
         ),
+        Item(
+            id=5,
+            name="妖怪パッド",
+            type=ItemTypes.ITEM,
+            price=5000,
+            summary="知ったかぶりが使ってそうな板",
+            description="RAM: 64MB ストレージ: 1GB",
+            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYzigQQXA9nqeZ0FQ8qWDMPNP9feHf7oWRa_gzVXkpCnpy7yItc-K6QcW2&s=10",
+        ),
     ]
 
     @classmethod
