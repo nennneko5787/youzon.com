@@ -1,6 +1,6 @@
+import aiofiles
 from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
-import aiofiles
 
 router = APIRouter()
 
@@ -11,5 +11,5 @@ router = APIRouter()
     include_in_schema=False,
 )
 async def index(request: Request):
-    async with aiofiles.open("./pages/index.html", "r") as f:
+    async with aiofiles.open("./pages/index.html", "r", encoding="utf-8") as f:
         return await f.read()

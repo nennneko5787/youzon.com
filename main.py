@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.endpoints import frontend
+from app.endpoints.api import topsale
 
 app = FastAPI(
     title="妖zon.com",
@@ -9,3 +10,4 @@ app = FastAPI(
 )
 
 app.include_router(frontend.router)
+app.include_router(topsale.router)
