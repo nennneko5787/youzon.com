@@ -19,7 +19,7 @@ async def index(request: Request):
     domain = idna.decode(request.url.hostname.lower()).split(".")
     if (
         domain[0] == "www"
-        or domain[0] == "妖zon.com"
+        or domain[0] == "妖zon"
         or domain[0] == "localhost"
         or domain[0] == "127"
     ):
@@ -41,7 +41,7 @@ async def profile(request: Request, botid: str):
     domain = idna.decode(request.url.hostname.lower()).split(".")
     if not (
         domain[0] == "www"
-        or domain[0] == "妖zon.com"
+        or domain[0] == "妖zon"
         or domain[0] == "localhost"
         or domain[0] == "127"
     ):
